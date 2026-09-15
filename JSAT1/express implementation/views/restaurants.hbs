@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurants</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>🍽️ Restaurants</h1>
+    {{#each restaurants}}
+        <div class="restaurant-card">
+            <h2>{{name}}</h2>
+            <p><strong>Cuisine:</strong> {{cuisine}}</p>
+            <p><strong>Location:</strong> {{location}}</p>
+            <p><strong>Rating:</strong> ⭐ {{rating}}</p>
+            <p><strong>Delivery Time:</strong> {{deliveryTime}}</p>
+            {{#if available}}
+                <p>🟢 <strong>Currently Available</strong></p>
+            {{else}}
+                <p>🔴 <strong>Currently Unavailable</strong></p>
+            {{/if}}
+            <a href="/restaurant/{{id}}">
+                View Restaurant
+            </a>
+        </div>
+    {{/each}}
+    <br>
+    <a href="/">Back To Home</a>
+</body>
+</html>

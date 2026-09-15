@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Order Status</title>
+    <link rel="stylesheet" href="/style.cs">
+</head>
+
+<body>
+
+    <h1>📦 Order #{{order.id}}</h1>
+
+    <p>
+        Customer:
+        {{order.customer}}
+    </p>
+
+    <p>
+        Restaurant:
+        {{order.restaurant}}
+    </p>
+
+    <p>
+        Food Item:
+        {{order.item}}
+    </p>
+
+    <p>
+        Amount:
+        ₹{{order.amount}}
+    </p>
+
+
+    <h2>
+        Order Status:
+        {{order.status}}
+    </h2>
+
+
+    {{#if (isAvailable true)}}
+
+        <p>
+            Your order is being processed.
+        </p>
+
+    {{/if}}
+
+
+    <a href="/">
+        Back to Home
+    </a>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>{{restasurant}}</title>
+    <link rel="stylesheet" href="/style.cs">
+
+</head>
+
+<body>
+
+    <h1>🍽️ Available Restaurants</h1>
+
+    {{#each restaurants}}
+
+        <div>
+
+            <h2>{{name}}</h2>
+
+            <p>
+                Cuisine: {{cuisine}}
+            </p>
+
+            <p>
+                Location: {{location}}
+            </p>
+
+            <p>
+                Rating: ⭐ {{rating}}
+            </p>
+
+            <p>
+                Delivery Time: {{deliveryTime}}
+            </p>
+
+
+            {{#if (isAvailable available)}}
+
+                <p>
+                    🟢 <strong>Currently Available</strong>
+                </p>
+
+            {{else}}
+
+                <p>
+                    🔴 <strong>Currently Unavailable</strong>
+                </p>
+
+            {{/if}}
+
+
+            <a href="/restaurant/{{id}}">
+                View Restaurant
+            </a>
+
+        </div>
+
+        <hr>
+
+    {{/each}}
+
+    <a href="/">
+        Back to Home
+    </a>
+
+</body>
+
+</html>

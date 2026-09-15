@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f8f8f8;
+color: #333;
+padding: 30px;
+}
+
+h1 {
+color: #e63946;
+text-align: center;
+margin-bottom: 20px;
+}
+
+h2 {
+color: #333;
+margin-bottom: 10px;
+}
+
+h3 {
+margin: 15px 0;
+}
+
+p {
+margin: 8px 0;
+}
+
+a {
+display: inline-block;
+text-decoration: none;
+background-color: #e63946;
+color: white;
+padding: 10px 18px;
+border-radius: 6px;
+margin-top: 10px;
+}
+
+a:hover {
+background-color: #c92f3c;
+}
+
+.restaurant-card {
+background-color: white;
+padding: 20px;
+margin: 20px auto;
+max-width: 600px;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-card {
+background-color: white;
+padding: 25px;
+margin: 30px auto;
+max-width: 500px;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+margin: 15px 0 15px 25px;
+}
+
+li {
+margin: 8px 0;
+}
